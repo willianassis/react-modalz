@@ -1,7 +1,7 @@
 {
-  "name": "rinse-react",
-  "version": "2.0.0",
-  "description": "Modalz.",
+  "name": "react-modalz",
+  "version": "0.0.1",
+  "description": "Simple, straight foward react/redux modal",
   "main": "dist/modalz.js",
   "private": false,
   "scripts": {
