@@ -1,0 +1,59 @@
+{
+  "name": "rinse-react",
+  "version": "2.0.0",
+  "description": "Modalz.",
+  "main": "dist/modalz.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "storybook": "start-storybook -p 9001",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwlsn/rinse-react.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "react",
+    "shared",
+    "components",
+    "components"
+  ],
+  "author": "Connor Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwlsn/rinse-react/issues"
+  },
+  "homepage": "https://github.com/cwlsn/rinse-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/cache": "^10.0.0",
+    "@emotion/core": "^10.0.5",
+    "@emotion/styled": "^10.0.5",
+    "@emotion/utils": "^0.11.1",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^1.0.1",
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
+}
