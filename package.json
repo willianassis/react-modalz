@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwlsn/rinse-react.git"
+    "url": "git+https://github.com/willianassis/react-modalz.git"
   },
   "keywords": [
     "boilerplate",
@@ -22,12 +22,9 @@
     "components",
     "components"
   ],
-  "author": "Connor Wilson",
+  "author": "Willian Assis",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cwlsn/rinse-react/issues"
-  },
-  "homepage": "https://github.com/cwlsn/rinse-react#readme",
+  "homepage": "https://github.com/willianassis/react-modalz#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
