@@ -3,7 +3,7 @@ import classnames from 'classnames'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { modalzOpen, modalzClose } from './modalz.actions'
-import './modalz.scss'
+import './modalz.css'
 
 const Modalz = props => {
   const { modalzOpen, modalzClose, modalz } = props

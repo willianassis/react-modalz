@@ -30,7 +30,7 @@ module.exports = {
 				// I haven't used SCSS in the base example, but it's here for you if you
 				// want! If you want to use CSS, you can change this next like's regex to
 				// /\.(css|scss)$/ or even just /\.css$/
-				test: /\.scss$/,
+				test: /\.(css|scss)$/,
 				use: [
 					// These three libraries are commonly used together to turn Sass into
 					// CSS, then be able to load the CSS directly with imports. From there
