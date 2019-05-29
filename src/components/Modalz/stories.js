@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
 import thunk from 'redux-thunk'
-import { Modalz } from './Modalz';
+import Modalz from './';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import Demo from './stories.demo'
