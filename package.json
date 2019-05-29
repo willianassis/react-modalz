@@ -1,9 +1,9 @@
 {
   "name": "react-modalz",
   "version": "0.0.1",
-  "description": "Simple, straight foward react/redux modal",
+  "description": "Simple, straight foward react/redux modal.",
   "main": "dist/modalz.js",
-  "private": false,
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
