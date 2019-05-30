@@ -60,7 +60,7 @@ module.exports = {
 	// dist is a common output folder, and it should be gitignored. The build can
 	// be run after publishing so you don't wind up with it in source control
 	output: {
-		path: path.resolve(__dirname, 'dist/'),
+		path: path.resolve(__dirname, 'lib/'),
 		publicPath: '',
 		// You can do fun things here like use the [hash] keyword to generate unique
 		// filenames, but for this purpose rinse.js is fine. This file and path will
@@ -72,4 +72,8 @@ module.exports = {
 		// https://webpack.js.org/configuration/output/#output-librarytarget
 		libraryTarget: 'umd',
 	},
+	externals: {
+		'react': 'React',
+		'react-dom': 'ReactDOM'
+	}
 };

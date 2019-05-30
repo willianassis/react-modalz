@@ -1,12 +1,14 @@
 {
   "name": "react-modalz",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple, straight foward react/redux modal.",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build-production": "webpack --mode production",
+    "build": "babel src/ --out-dir lib && npm run sass",
+    "sass": "node-sass src/Modalz/modalz.scss lib/Modalz/modalz.css --output-style compressed",
     "storybook": "start-storybook -p 9001",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
@@ -26,6 +28,9 @@
   "license": "MIT",
   "homepage": "https://github.com/willianassis/react-modalz#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "better-npm-run": "^0.1.1",
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
@@ -44,9 +49,7 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2"
-  },
-  "dependencies": {
+    "webpack-cli": "^3.3.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
@@ -54,10 +57,11 @@
     "redux-thunk": "^2.3.0"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*",
-    "react-redux": "*",
-    "redux": "*",
-    "redux-thunk": "*"
-  }
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "bundleDependencies": false
 }
