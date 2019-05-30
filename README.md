@@ -38,7 +38,6 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 function App(props) {
-  console.log(props)
   return (
     <div className="App">
       <button onClick={() => props.modalzOpen(<Component userId={1} />)}>Open Modal</button>
