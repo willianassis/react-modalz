@@ -1,6 +1,3 @@
 // Export all the explicitly exported components, this file will contain our
 // components when built by webpack and sent off to the world.
-import Modalz, { ModalzReducers } from './components/Modalz';
-
-export { ModalzReducers };
-export default Modalz; 
+export * from './components'

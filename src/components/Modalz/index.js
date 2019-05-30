@@ -1,8 +1,10 @@
-import ModalzReducer from './modalz.reducers'
+import ModalzReducers from './modalz.reducers'
+import ModalzActions from './modalz.actions'
 import Modalz from './modalz.component'
 
 export {
-  ModalzReducer
+  ModalzReducers,
+  ModalzActions
 }
 
 export default Modalz
