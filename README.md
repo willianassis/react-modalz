@@ -22,7 +22,6 @@ import rootReducer from './rootReducer'
 const store = applyMiddleware(thunk)(createStore)(rootReducer)
 ```
 
-Place the Modalz component at your 'root' so it can be called gloabally between all components.
 > index.js
 ```sh
 <Provider store={store}>
@@ -30,6 +29,7 @@ Place the Modalz component at your 'root' so it can be called gloabally between 
 </Provider>
 ```
 
+Place the Modalz component at your 'root' so it can be called gloabally between all components.
 > app.js
 ```sh
 import React from 'react'
@@ -49,7 +49,7 @@ function App(props) {
 function Component(props) {
   return (
     <div>
-      Componente exemplo recebendo props {props.userId}
+      Heres is you component inside Modalz Body. // {props.userId}
     </div>
   )
 }
@@ -87,12 +87,13 @@ Here you can update the modal config. ex:
 
 ```sh
 useEffect(() => {
-    props.modalzUpdate({
-      title: 'modal title here.'
-    })
+  props.modalzUpdate({
+    title: 'modal title here.'
+  })
 }, [])
 ```
 
+#### modalzUpdate object props
 | Prop | Type |
 | ------ | ------ |
 | isOpen | Boolean |
