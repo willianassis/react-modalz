@@ -10,20 +10,20 @@ const INITIAL = {
   btnConfirmText: 'Save',
   btnConfirmClass: 'modalz-btn-success'
 
-}
+};
 
 export default (state = INITIAL, action) => {
   switch (action.type) {
     case 'OPEN':
-      return { ...state, isOpen: true, content: action.payload }
+      return { ...state, isOpen: true, content: action.payload };
     case 'CLOSE':
-      return { ...state, isOpen: false } 
+      return { ...state, isOpen: false } ;
     case 'UPDATE': 
       return {
         ...state,
         ...action.payload
-      }
+      };
     default:
-      return state
+      return state;
   }
 }

@@ -1,10 +1,9 @@
-import ModalzReducers from './modalz.reducers'
-import ModalzActions from './modalz.actions'
-import Modalz from './modalz.component'
+import ModalzReducers from './modalz.reducers';
+import * as ModalzActions from './modalz.actions';
+import Modalz from './modalz.component';
 
 export {
+  Modalz,
   ModalzReducers,
   ModalzActions
-}
-
-export default Modalz
+};

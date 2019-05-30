@@ -1,5 +1,3 @@
-import Modalz, { ModalzReducers, ModalzActions } from './Modalz';
+import { Modalz, ModalzReducers, ModalzActions } from './Modalz';
 
-export { ModalzReducers, ModalzActions };
-
-export default Modalz;
+export { Modalz, ModalzReducers, ModalzActions };

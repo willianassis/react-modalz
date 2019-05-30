@@ -1,12 +1,12 @@
-import React from 'react'
-import classnames from 'classnames'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { modalzOpen, modalzClose } from './modalz.actions'
-import './modalz.css'
+import React from 'react';
+import classnames from 'classnames';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { modalzOpen, modalzClose } from './modalz.actions';
+import './modalz.css';
 
 const Modalz = props => {
-  const { modalzOpen, modalzClose, modalz } = props
+  const { modalzOpen, modalzClose, modalz } = props;
 
   return (
     <>
@@ -36,10 +36,10 @@ const Modalz = props => {
   )
 }
 
-const mapState = state => ({ modalz: state.modalz })
-const mapDispatch = dispatch => bindActionCreators({ modalzOpen, modalzClose }, dispatch)
+const mapState = state => ({ modalz: state.modalz });
+const mapDispatch = dispatch => bindActionCreators({ modalzOpen, modalzClose }, dispatch);
 
 export default connect(
   mapState,
   mapDispatch
-)(Modalz)
+)(Modalz);
