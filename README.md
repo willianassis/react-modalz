@@ -2,8 +2,7 @@
 
 Easy, fast, straight foward react/redux modal.
 
-##### !!! This lib has Redux-Thunk as middleware dependecie. !!!
-#
+##### !!! This lib has Redux-Thunk as middleware dependency. !!!
 #
 ### Installation
 ```sh
