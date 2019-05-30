@@ -12,7 +12,7 @@ function Demo(props) {
   
 	return (
 		<div>
-      <button onClick={() => props.modalzOpen(ModalContent) }>
+      <button onClick={() => props.modalzOpen(<ModalContent userId={1} />) }>
 				Open Modal from any component, passing another component to the modalz body.
 			</button>
     </div>
@@ -21,7 +21,7 @@ function Demo(props) {
 
 function ModalContent(props) {
   return(
-    <div>Your Component goes here!</div>
+    <div>Passing user id {props.userId}</div>
   )
 }
 

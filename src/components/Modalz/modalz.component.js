@@ -19,7 +19,7 @@ const Modalz = props => {
             <button className="modalz-btn-close" onClick={modalzClose}>&#8722;</button>
           </div>
           <div className="modalz-body">
-            {modalz.content && modalz.content()}
+            {modalz.content && modalz.content}
           </div>
           <div className="modalz-footer">
             <button 
