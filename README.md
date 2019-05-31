@@ -1,6 +1,7 @@
 # React-Modalz
 
 Easy, fast, straight foward react/redux modal.
+NOTE: This is an experiment and still very early in development.
 
 ##### !!! This lib has Redux-Thunk as middleware dependency. !!!
 #
